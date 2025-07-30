@@ -8,9 +8,9 @@ export PYTHONPATH="${PYTHONPATH}:$(pwd)/verl"
 export HF_ENDPOINT="https://huggingface.co"
 export HF_HUB_OFFLINE=1
 
-OUTPUT_SEED_PATH=${OUTPUT_SEED_PATH:-data/qwen3_0_6b_seed_io.jsonl}
-OUTPUT_ERROR_SEED_PATH=${OUTPUT_ERROR_SEED_PATH:-data/qwen3_0_6b_error_seed_io.jsonl}
-OUTPUT_CODE_F_SEED_PATH=${OUTPUT_CODE_F_SEED_PATH:-data/qwen3_0_6b_code_f_seed_io.jsonl}
+OUTPUT_SEED_PATH=${OUTPUT_SEED_PATH:-data/qwen3_4b_seed_io.jsonl}
+OUTPUT_ERROR_SEED_PATH=${OUTPUT_ERROR_SEED_PATH:-data/qwen3_4b_error_seed_io.jsonl}
+OUTPUT_CODE_F_SEED_PATH=${OUTPUT_CODE_F_SEED_PATH:-data/qwen3_4b_code_f_seed_io.jsonl}
 
 python -m absolute_zero_reasoner.main_azr_ppo \
     data.shuffle=True \
