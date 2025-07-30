@@ -250,4 +250,3 @@ To add new intrinsic rewards:
 
 ---
 
-This documentation reflects the actual implementation of Absolute Zero Reasoner, a sophisticated research system demonstrating how language models can improve reasoning through self-play without external training data.
