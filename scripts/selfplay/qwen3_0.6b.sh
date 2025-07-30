@@ -23,7 +23,7 @@ python -m absolute_zero_reasoner.main_azr_ppo \
     data.max_prompt_length=6144 \
     data.max_response_length=8096 \
     azr.data_selection_strategy.content_max_length=5600 \
-    actor_rollout_ref.model.path=Qwen/Qwen3-4B-Base \
+    actor_rollout_ref.model.path=Qwen/Qwen3-0.6B \
     actor_rollout_ref.actor.optim.lr=1e-6 \
     actor_rollout_ref.model.use_remove_padding=True \
     actor_rollout_ref.actor.ppo_mini_batch_size=128 \
