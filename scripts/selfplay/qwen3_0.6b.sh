@@ -58,7 +58,7 @@ python -m absolute_zero_reasoner.main_azr_ppo \
     trainer.remove_previous_ckpt_in_save=True \
     trainer.del_local_ckpt_after_load=True \
     trainer.test_freq=10 \
-    +trainer.val_before_train=True \
+    +trainer.val_before_train=False \
     reward_fn.extraction_type=answer_conditional \
     reward_fn.math_metric=math_verify \
     trainer.log_val_generations=0 \
@@ -72,7 +72,7 @@ python -m absolute_zero_reasoner.main_azr_ppo \
     azr.pretrain_pred_steps=-1 \
     azr.executor=qwq \
     azr.ast_check=True \
-    azr.reward.n_samples=4 \
+    azr.reward.n_samples=8 \
     azr.problem_types=['code_i','code_o','code_f'] \
     azr.data_selection_strategy.banned_keywords_for_errors_and_exceptions=['raise'] \
     trainer.debug=False \
